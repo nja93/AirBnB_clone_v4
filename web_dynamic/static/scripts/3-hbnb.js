@@ -27,24 +27,21 @@ $(document).ready(function () {
 			      // alert(place.name);
 			      let article = $("<article></article>");
 			      let placeHtml = `
-			      <div class="headline">
+			      <div class="title_box">
 			      	<h2>${place.name}</h2>
 				<div class="price_by_night">
-				  <p>$${place.price_by_night}</p>
+				  $${place.price_by_night}
 				</div>
 			      </div>
 			      <div class="information">
 			      	<div class="max_guest">
-				  <div class="guest_icon"></div>
-				  <p>${place.max_guest} Guests</p>
+				  ${place.max_guest} Guests
 				</div>
 			      <div class="number_rooms">
-			        <div class="bed_icon"></div>
-				  <p>${place.number_rooms} Bedroom</p>
+				  ${place.number_rooms} Bedrooms
 			      </div>
 			      <div class="number_bathrooms">
-			      	<div class="bath_icon"></div>
-				  <p>${place.number_bathrooms} Bathroom</p>
+				  ${place.number_bathrooms} Bathrooms
 				</div>
 			      </div>
 			      <div class="user"><b>Owner</b>: ${place.usernames}</div>
